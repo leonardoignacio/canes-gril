@@ -29,7 +29,6 @@ __pycache__/
 # Os arquivos estáticos coletados também não precisam ser versionados.
 /media/
 
-
 ### Arquivos de Configuração Local ###
 # Nunca envie arquivos com senhas, chaves de API ou outras informações sensíveis.
 # Crie um arquivo de exemplo (ex: .env.example) para que outros saibam quais variáveis são necessárias.

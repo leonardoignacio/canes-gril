@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'usuarios',
     'funcionario',
     'churras',
+    'api',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,7 +45,16 @@ INSTALLED_APPS = [
     'cloudinary',
     'cloudinary.forms', 
     'cloudinary.models',
+    'rest_framework',
+    'rest_framework_simplejwt',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
+}
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
